@@ -9,7 +9,8 @@
         <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app1"></div>
+        <div id="app2"></div>
 
         <script type="text/babel">
             class Hello extends React.Component {
@@ -18,7 +19,15 @@
                 }
             }
 
-            ReactDOM.render(<Hello/>, document.getElementById("app"));
+            class Btn extends React.Component{
+                render() {
+                    let element = <h1>contoh JSX</h1>
+                    return element;
+                }
+            }
+
+            ReactDOM.render(<Hello/>, document.getElementById("app1"));
+            ReactDOM.render(<Btn/>, document.getElementById("app2"))
         </script>
     </body>
 </html>
