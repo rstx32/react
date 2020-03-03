@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>test jsx</title>
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    </head>
+    <style>
+        .header{
+            background-color: darkcyan;
+            color: beige;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <body>
+        <div id="wadah"></div>
+        <script type="text/babel">
+            let header=(
+                <header className="header">
+                    <h1>belajar ReactJS</h1>
+                    <p>belajar jsx</p>
+                </header>
+            );
+
+            ReactDOM.render(header,document.getElementById("wadah"));
+        </script>
+    </body>
+</html>
