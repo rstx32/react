@@ -6,15 +6,26 @@ import * as serviceWorker from './serviceWorker';
   
 function Halo(){
     return(
-      <div>
-        <h1>belajar fungsi reactjs</h1>
-        <h2>belajar fungsi reactjs</h2>
-      </div>
+        <div>
+            <h1>belajar fungsi reactjs</h1>
+            <h2>belajar fungsi reactjs</h2>
+        </div>
     );
-  }
+}
+
+class Hallo extends React.Component{
+    render(){
+        return(
+            <div>
+                <h1>belajar class reactjs</h1>
+                <h2>belajar class reactjs</h2>
+            </div>
+        );
+    }
+}
 
 //ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<Halo />, document.getElementById('root'));
+ReactDOM.render(<Hallo />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
