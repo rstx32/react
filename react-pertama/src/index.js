@@ -19,13 +19,21 @@ class Hallo extends React.Component{
         this.state={
             title: "ini judul",
             subtitle: "ini subjudul"
-        }
+        };
     }
+
+    ubahJudul = () => {
+        this.setState({
+            title: "judul berubah"
+        });
+    }   
+
     render(){
         return(
             <div>
                 <h1>{this.state.title}</h1>
                 <h2>{this.state.subtitle}</h2>
+                <button onClick={this.ubahJudul}>ubah judul</button>
             </div>
         );
     }
