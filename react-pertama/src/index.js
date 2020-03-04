@@ -14,11 +14,18 @@ function Halo(){
 }
 
 class Hallo extends React.Component{
+    constructor(){
+        super();
+        this.state={
+            title: "ini judul",
+            subtitle: "ini subjudul"
+        }
+    }
     render(){
         return(
             <div>
-                <h1>belajar class reactjs</h1>
-                <h2>belajar class reactjs</h2>
+                <h1>{this.state.title}</h1>
+                <h2>{this.state.subtitle}</h2>
             </div>
         );
     }
